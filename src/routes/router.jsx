@@ -6,10 +6,12 @@ import Signup from "../pages/Auth/Signup";
 import ForgotPassword from "../pages/Auth/ForgotPassword";
 import ResetPassword from "../pages/Auth/ResetPassword";
 import EmailVerification from "../pages/Auth/EmailVerification";
-import CandidateDetails from "../pages/FindCandidate/CandidateDetails";
-import FindCandidate from "../pages/FindCandidate/FindCandidate";
-import EmployerDetails from "../pages/FindEmployers/EmployerDetails";
-import FindEmployers from "../pages/FindEmployers/FindEmployers";
+import CandidateDetails from "../pages/Candidate/CandidateDetails";
+import FindCandidate from "../pages/Candidate/FindCandidate";
+import EmployerDetails from "../pages/Employers/EmployerDetails";
+import FindEmployers from "../pages/Employers/FindEmployers";
+import FindJob from "../pages/Jobs/FindJob";
+import JobDetails from "../pages/Jobs/JobDetails";
 
 const router = createBrowserRouter([
     {
@@ -26,8 +28,8 @@ const router = createBrowserRouter([
             { path: "/email-verification", element: <EmailVerification />, },
 
             // jobs related routes
-            { path: "/find-jobs", element: <ForgotPassword />, },
-            { path: "/job-details", element: <ForgotPassword />, },
+            { path: "/find-jobs", element: <FindJob />, },
+            { path: "/job-details", element: <JobDetails />, },
 
             // Employers related routes
             { path: "/find-employers", element: <FindEmployers />, },
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
             // Candidate related routes
             { path: "/find-candidate", element: <FindCandidate />, },
             { path: "/candidate-details", element: <CandidateDetails />, },
- 
+
         ]
     },
 ]);
