@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Select, { components } from "react-select";
 
-// Language options with flag image URLs
+
 const languageOptions = [
   {
     value: "en",
@@ -63,23 +63,7 @@ const LanguageSelector = () => {
         onChange={setSelectedLanguage}
         components={{ Option, SingleValue }}
         isSearchable={false}
-        styles={{
-          control: (base) => ({
-            ...base,
-            display: "flex",
-            cursor: "pointer",
-            borderRadius: "8px",
-            borderColor: "#ccc",
-            boxShadow: "none",
-            minHeight: 40,
-          }),
-          option: (base, state) => ({
-            ...base,
-            backgroundColor: state.isFocused ? "#f0f0f0" : "white",
-            color: "black",
-            cursor: "pointer",
-          }),
-        }}
+        
       />
     </div>
   );

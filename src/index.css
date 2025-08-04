@@ -36,4 +36,6 @@
 .bg-color5 {background-color: #EA4C89;}
 .bg-color6 {background-color: #FCEEEE;}
 
-
+.w-primary{
+    @apply max-w-screen-2xl 2xl:mx-auto md:mx-10 mx-3
+}

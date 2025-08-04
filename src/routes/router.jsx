@@ -12,6 +12,9 @@ import EmployerDetails from "../pages/Employers/EmployerDetails";
 import FindEmployers from "../pages/Employers/FindEmployers";
 import FindJob from "../pages/Jobs/FindJob";
 import JobDetails from "../pages/Jobs/JobDetails";
+import Crountry from "../pages/CountryPage/Countries";
+import CountryDetails from "../pages/CountryPage/CountryDetails";
+import Countries from "../pages/CountryPage/Countries";
 
 const router = createBrowserRouter([
     {
@@ -38,7 +41,9 @@ const router = createBrowserRouter([
             // Candidate related routes
             { path: "/find-candidate", element: <FindCandidate />, },
             { path: "/candidate-details", element: <CandidateDetails />, },
-
+            
+            { path: "/country", element: <Countries />, },
+            { path: "/country-details/:id", element: <CountryDetails />, },
         ]
     },
 ]);
