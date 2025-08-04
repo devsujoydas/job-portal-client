@@ -2,7 +2,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 
-function SignIn() {
+function Signup() {
   const { register, handleSubmit, formState: { errors }, } = useForm();
 
   const onSubmit = (data) => {
@@ -70,4 +70,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default Signup;
