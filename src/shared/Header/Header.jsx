@@ -11,8 +11,8 @@ const Header = () => {
         <div className='  flex justify-between items-center gap-5 '>
           <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/"}>Home</NavLink>
           <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/find-jobs"}>Find Job</NavLink>
-          <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/find-candidate"}>Employers</NavLink>
-          <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/find-employers"}>Candidate</NavLink>
+          <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/find-employers"}>Employers</NavLink>
+          <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/find-candidate"}>Candidate</NavLink>
           <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/pricing-plan"}>Pricing Plans</NavLink>
           <NavLink className={({ isActive }) => `py-2.5 ${isActive ? "border-b-2 border-blue-500 text-blue-600 font-medium" : "border-b-2 border-transparent"}`} to={"/customers-supports"}>Customers Supports</NavLink>
         </div>
